@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse
  * @date 2022-11-07
  * @version 1.0.0
  **/
+
 class GlobalExceptionFilter(
     private val objectMapper: ObjectMapper
 ) : OncePerRequestFilter() {

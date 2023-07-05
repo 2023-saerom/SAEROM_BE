@@ -19,5 +19,4 @@ class ParentEntity(
     val nickname: String,
 
     val email: String
-) {
-}
+)

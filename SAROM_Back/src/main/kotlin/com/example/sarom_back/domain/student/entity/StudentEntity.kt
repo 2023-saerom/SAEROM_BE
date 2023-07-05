@@ -13,5 +13,4 @@ class StudentEntity(
     val id: Int = 0,
 
     val phoneNumber: String
-) {
-}
+)

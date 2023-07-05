@@ -3,16 +3,11 @@ server:
 
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_NAME}
-    password: ${DB_PWD}
+    url: jdbc:mysql://localhost:3306/mydatabase
+    username: root
+    password: Inging2514!
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
     generate-ddl: true
-
-jwt:
-  secretKey:
-  accessExp: 3000
-  refreshExp: 80000

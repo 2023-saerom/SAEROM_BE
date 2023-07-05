@@ -8,9 +8,9 @@ enum class AuthErrorCode(
 ) : ErrorProperty {
 
     INVALID_PASSWORD_EXCEPTION(400, "Invalid Password"),
-    AUTH_CODE_NOT_FOUND(404, "Auth Code Not Found"),
-    EMAIL_NOT_FOUND(400, "Email Not Found"),
-    EMAIL_ALREADY_EXISTS(409, "Email Already Exists")
+    USERNAME_NOT_FOUND(404, "User Name Not Found"),
+    EMAIL_ALREADY_EXISTS(409, "Email Already Exists"),
+    USERNAME_ALREADY_EXISTS(409, "Username Already Exists")
     ;
 
     override fun status(): Int = status

@@ -7,7 +7,8 @@ import org.springframework.data.redis.core.RedisHash
 import org.springframework.data.redis.core.TimeToLive
 
 @RedisHash("tbl_refresh_token")
-data class RefreshTokenEntity(
+
+data class RefreshTokenEntity (
 
     @Id
     val token: String,
@@ -21,5 +22,4 @@ data class RefreshTokenEntity(
     @field:NotNull
     @TimeToLive
     val expirationTime: Int
-
 )
