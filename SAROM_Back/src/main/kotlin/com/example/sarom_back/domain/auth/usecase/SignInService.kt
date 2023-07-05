@@ -7,6 +7,7 @@ import com.example.sarom_back.domain.auth.presentation.dto.response.SignInReques
 import com.example.sarom_back.domain.auth.type.Authority
 import com.example.sarom_back.domain.parent.entity.ParentRepository
 import com.example.sarom_back.global.security.jwt.JwtProvider
+import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.stereotype.Service
 

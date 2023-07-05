@@ -12,11 +12,11 @@ class ParentEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int = 0,
 
-    val username: String,
+    var username: String,
 
-    val password: String,
+    var password: String,
 
-    val nickname: String,
+    var nickname: String,
 
-    val email: String
+    var email: String
 )
